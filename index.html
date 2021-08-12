@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title>ahmed</title>
+  <style>
+    .navbar {
+      background-color: #007bffb7 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.facebook.com/groups/850669292116376" target="_blank"
+        style="border-right: 1px solid rgb(0, 84, 209);padding-right: 10px;">
+        <img src="../../images/spark.jpg" style="height: 35px;width: 35px; margin-right: 5px;" alt="">
+        Spark</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Join Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#course1">WEB DEVELOPMENT</a></li>
+              <li><a class="dropdown-item" href="#course2">Flutter</a></li>
+              <li><a class="dropdown-item" href="#course3s">c++</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#about">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" style="margin-right: 10px;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info text-light " type="submit">Search</button>
+        </form>
+        <form class="d-flex">
+          <button class="btn btn-outline-info text-light " type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid p-0">
+    <!--carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../images/spark.jpg" class="d-block w-100" alt="..." style="height: 600px;" id="home">
+          <div class="carousel-caption">
+            <h1>Spark
+              <hr>
+              Real teachers… Real fluency!
+            </h1>
+            <a href="#" class="btn btn-primary">About us</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../../images/img1.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+          <div class="carousel-caption">
+            <h1>WEB DEVELOPMENT</h1>
+            <a href="https://forms.gle/hrQsTA2e73gkpS5M9" target="_blank" class="btn btn-primary">join to course</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../../images/img2.1.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+          <div class="carousel-caption">
+            <h1>flutter</h1>
+            <a href=" https://forms.gle/z354XgoL1fYuJ9V96" target="_blank" class="btn btn-primary">join to course</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../../images/img2.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+          <div class="carousel-caption">
+            <h1>c++ & oop</h1>
+            <a href="https://forms.gle/oYren9Eht4QtTQcw5" target="_blank" class="btn btn-primary">join to course</a>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--carousel-->
+    <hr class="my-4">
+    <!--collapese programing-lang-->
+    <h1 class="text-center">our courses <span class="badge bg-secondary"></span></h1>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item text-light bg-primary">
+        <h2 class="accordion-header text-light bg-primary" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne" id="course1">
+            WEB DEVELOPMENT
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>💪 “WEB DEVELOPMENT” رجعنالكم بدبلومة
+              دبلومه ال Full stack development
+              والي هتكون عبارة عن جزئين
+              🔹 FRONT END
+              🔹BACK END
+              في طريقين يا اما بال Node.js او بال php تقدر تختار هتدرس بانهي طريقه فيهم وطبعا الاحدث والاكثر استخدام قي
+              اغلب ال website دلوقتي ال node.js ✅
+              تقدر تسالنا عن محتوي الدبلومه لكل جزء وهنبعتهولك❤️
+              🔴 COURSE "Projects"
+              - Make full project (burger application (front and back))
+              - Make full project (Instagram application (front and back)
+              🔴 غير اننا هنعلمك بعض المهارات خلال الكورس
+              “logical thinking & problem solving - code tuning”
+              🕳️logical thinking & problem solving
+              عشان تعرف تحل مشاكل كاملة ومعقدة من بيئة العمل الحقيقية مش مجرد حلول المشاكل المباشرة لانك هتطبق كتير جدا
+              🕳️code tuning
+              عشان تكتب كود محترم، تكون عارف ابعاده وبيأثر على السيستم بتاعك ازاى وكل ده هيطبق فى مشروع كامل هنتعامل فيه
+              مع كل لغات الويب الفرونت والباك.
+              مش مطلوب منك معلومات عن الكورس سابقه وهنبدأ معاك من الاساسيات لحد ما توصل لأعلي ليفيل في مستواك عشان تقدر
+              تشتغل فى شركات محترمة او تشتغل freelancer
+              مطلوب منك 👇
+              -ان يكون عندك طموح لاننا هنطول مع بعض شويه😅
+              - لازم تكون حابب المجال او عندك شغف ازي تقدر تعمل website
+              - حابب تتعلم وتطور من نفسك
+              - مجهود عشان توصل معنا لاعلي ليفيل
+              مهمتنا تدخل مبتدأ تخرج عندك خبره كبيره في المجال وتقدر تضيف مشاريع الدبلومة في ال C.V بتاعك💪
+              كمان spark بتقدملك خصم 30% علي سعر الدبلومة
+              تقدر تسجل معنا من خلال اللينك التالي✅<br>
+              <h4>.join us from<a href="https://forms.gle/hrQsTA2e73gkpS5M9" target="_blank"
+                  style="color: black;">here</a> </h4>
+              للمزيد من المعلومات و لأي اسئله عن المحتوي كلمونا علي رسايل الصفحه ،أو اتصلوا بينا علي الارقام التاليه :
+              01154908587_ 01009398384
+              #Spark_Institution⚡️
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item text-light bg-primary">
+        <h2 class="accordion-header text-light bg-primary" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="course2">
+            Flutter
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>في عام 2011 شركه جوجل أطلقت لغه برمجه جديده اسمها "Dart "
+              وبعدها ب 6 سنين جوجل أطلقت Framework اسمه flutter بيشتغل بلغه ال Dart التي لا تقل سهوله ولا اهميه عن ال
+              java حاليا في مجال app developer ..
+              واصبح مهم جدا انك ك developer تتعلم ال Flutter
+              طب يعني ايه flutter ؟
+              -ال flutter هي اداة بنستخدمها عشان نبني تطبيقات اصليه متعددة المنصات المنصات (web desktop-Android-IOS)
+              بنفس لغة البرمجه ونفس الكود ...
+              -والمميز فيه انه بيشتغل على المنصات (web desktop-Android-IOS)
+              -----------------------
+              ✍️ وال Flutter بيوفرلك سرعه كبيره جدا في برمجه وتحديث اي application.
+              ✍️ بيوفرلك حريه التحكم في كل عناصر ال application الداخليه.
+              ✍️وعشان التكلفه عنصر مهم للتقيم فا Flutter بيوفرلك خدمه مميزه بتكلفه أقل..
+              ✍️وعلى عكس اي برنامج تاني، flutter بيمكنك من برمجه application بيعمل على ال Android وال ios وال desktop.
+              ✍️ ال flutter بقى مهم جدا جدا في سوق العمل. ولأنه مجال المتمكنين منه قليلين دا بيخلي الشركات تعرض مرتبات
+              كبيره ؛ حتى لو كنت لسه خريج
+              --------
+              ❗❗ وطبعا Spark بتوفرلك كورس بسعر خيالي ومناسب تقدر من خلاله تتقن ال flutter
+              كمان مع انستراكتور خبير بالمجال وله خبره كبيره في تدريب الطلبه ده غير اننا هتعمل مشاريع كتير خلال فتره
+              الدبلومه ..
+              ❗الحق عرض الخصم إلى وصل ل 30% لفتره محدوده واحجز مكانك وسجل معانا في الفورم دي⬇️<br>
+              <h4>.join us from<a href=" https://forms.gle/z354XgoL1fYuJ9V96" target="_blank"
+                  style="color: black;">here</a> </h4>
+              للمزيد من المعلومات و لأي
+              اسئله عن المحتوي كلمونا علي رسايل الصفحه ،أو اتصلوا بينا علي الارقام التاليه :
+              01154908587_ 01009398384
+              #spark_institution
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item text-light bg-primary">
+        <h2 class="accordion-header text-light bg-primary" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="course3">
+            c++ & oop
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Why C++!?
+              ❗من اسهل وأشمل لغات البرمجه
+              ❗ليها استخدامات كتير مش متوفره في اي لغه تانيه زي
+              -AI (artificial intelligence)
+              -Operating Systems
+              -browsers (Google _Chrome)
+              -Screen recording,live streaming
+              _كمان بُتستخدم في صناعة ال Video gaming
+              _ وتستخدم في تقنيه ال Block chain
+              ودي تقنيه المستقبل، إللى هيقوم عليها كتير من الصناعات.
+              -----------------
+              هتتعلم أساسيات ال C++ وهنطبق عليها tasks كتير
+              وبعدها هتتعلم ال OOP
+              -وهتطبق كل المعلومات دي في projects آخر الكورس
+              C++
+              -Game (surprise)
+              -Bank data base
+              OOP
+              -String class implementation
+              -Online library
+              -كمان Spark بتقدملك الكورس بسعر خيالي، وعليه خصم يصل إلي 50%
+              تقدر تسجل معنا من خلال اللينك التالي<br>
+              <h4>.join us from<a href="https://forms.gle/oYren9Eht4QtTQcw5" target="_blank"
+                  style="color: black;">here</a> </h4>
+              للمزيد من المعلومات و لأي اسئله عن المحتوي كلمونا علي رسايل الصفحه ،أو اتصلوا بينا علي الارقام التاليه :
+              01154908587_ 01009398384
+              #spark_institution
+              #Every_thing_begins_with_a_spark💥
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <!--collapese programing-lang-->
+    <h1 class="text-center" id="about">About us <span class="badge bg-secondary"></span></h1>
+    <div class="container ">
+      <div class="row">
+        <!--About us-->
+        <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem;margin: 20px;">
+          <img src="../../images/m.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">eng.mohamed mahmoud</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go facebook</a>
+          </div>
+        </div>
+        <!--About us-->
+        <!--About us-->
+        <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem; margin: 20px;">
+          <img src="../../images/i.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">eng.Ahmed Ismail</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go facebook</a>
+          </div>
+        </div>
+        <!--About us-->
+        <!--About us-->
+        <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem; margin: 20px;">
+          <img src="../../images/k.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">eng.Ahmed Karam</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="https://www.facebook.com/ahemdkaremram" target="_blank" class="btn btn-primary">Go facebook</a>
+          </div>
+        </div>
+        <!--About us-->
+      </div>
+    </div>
+    <hr class="my-4">
+    <!--What our students think-->
+    <h1 class="text-center" id="about">What our students think<span class="badge bg-secondary"
+        style="margin-top: 50px;"></span></h1>
+    <h4 class="text-center" id="about">We do love to hear back from you<span class="badge bg-secondary"></span></h4>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top: 50px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <div class="card-body bg-primary">
+              Mawada Alhasan<br>Very professional! The one and only way of learning different languages
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="card-body bg-primary">
+              Khaled Alaa<br>
+              والله العظيم ومن غير كذب افضل مكان للتعلم فى العالم وبأسعار ممتازه جدا شكر جدا جدا من القلب
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="card-body bg-primary">
+              ahmed khaled<br>Very professional! The one and only way of learning different languages
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--What our students think-->
+    <hr class="my-4">
+    <!--join us-->
+    <h1 class="text-center" id="about">join us<span class="badge bg-secondary" style="padding-top:50px;"></span></h1>
+    <div class="join" style="display: flex;justify-content: center;margin: 50px;">
+      <div class="card bg-primary" style="width: 18rem;">
+        <div class="card-body" style="margin-right: 30px;">
+          <h5 class="card-title" style="color: white;">
+            <img src="../../images/fb.png" alt="" class="myicon">
+            like the page now
+          </h5>
+          <a href="https://www.facebook.com/groups/850669292116376" class="card-link" style="color: white;">Go to the
+            link</a>
+        </div>
+      </div>
+    </div>
+    <!--join us-->
+    <footer class="bg-primary text-light ">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class="border-top my-3">
+            <h5><img src="../../images/spark.jpg" class="myicon" alt="">Spark</h5>
+            <hr class="border-top my-3">
+            <p>Tel:01154908587_ 01009398384</p>
+            <p>Address:cairo,Egypt</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top my-3">
+            <h5><img src="../../images/spark.jpg" class="myicon" alt="">Important link</h5>
+            <hr class="border-top my-3">
+            <p><a href="https://www.facebook.com/groups/850669292116376" style="color: white;"
+                target="_blank">facebook</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top my-3">
+            <h5><img src="../../images/spark.jpg" class="myicon" alt="">SVision</h5>
+            <hr class="border-top my-3">
+            <p>Education is first</p>
+            <p>Education for all</p>
+            <p>Education is easy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <br>
+  </div>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
